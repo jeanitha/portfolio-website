@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSV to JSON</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="csv2json-style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="function.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,600;1,200;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="csv2json-pg">
+    <div class="topnav">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropbtn">
+                <a class="active" href="#">Projects</a>
+                <ul>
+                    <li>
+                        <a href="#">CSV to JSON</a>
+                    </li>
+                    <li>
+                        <a href="#">Tic Tac Toe</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+    <h1 id="heading">CSV to JSON Converter</h1>
+
+    <div class="content">
+        <div class="before">
+            <p>To get started, paste your CSV here</p>
+            <textarea id="csv" class="text"
+                placeholder="&quot;Id&quot;, &quot;Name&quot; ,&quot;Origin&quot;&#10;&quot;01&quot;, &quot;John&quot;, &quot;Albania&quot;&#10;&quot;02&quot;, &quot;Mary&quot;, &quot;Algeria&quot;"
+                style="min-width: 300px; min-height: 200px;"></textarea>
+
+            <div class="buttons">
+                <button id="saveCsv">Save CSV file</button>
+            </div>
+
+            <div class="input-file">
+                <p>Or, input a CSV file</p>
+                <label for="file-selector" class="custom-file-button">Choose File</label>
+                <input type="file" id="file-selector" accept=".csv" style="display: none;">
+                <span id="file-name"></span>
+              </div>
+
+            <div class="buttons">
+                <button id="convert">Convert to JSON</button>
+            </div>
+        </div>
+
+        <div class="result">
+            <p>
+                JSON
+            </p>
+            <textarea id="json" class="text" style="min-width: 300px; min-height: 200px;" rows="1"></textarea>
+            <div class="buttons">
+                <button id="download">Download JSON</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2024 by Jeanitha Jenata | <a href="mailto:jeanithajenata@gmail.com">jeanithajenata@gmail.com</a></p>
+    </footer>
+</body>
+
+</html>

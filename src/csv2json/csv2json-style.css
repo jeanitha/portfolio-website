@@ -1,0 +1,96 @@
+
+/*
+COLOR PALETTE
+
+Blue #93B7BE
+White #F1FFFA
+Beige #D5C7BC
+Mauve #785964
+Black #454545
+
+*/
+
+* {
+    background: #F1FFFA;
+}
+
+.topnav ul li a {
+    font-size: 14px;
+}
+
+.content {
+    margin-bottom: 10%;
+}
+
+h1 {
+    text-align: center;
+    margin: 12px 20%;
+    color: #F1FFFA;
+    background-color: #93B7BE;
+}
+
+p {
+    font-size: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: 600;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content .buttons button {
+    background-color: #785964;
+    border: none;
+    color: #F1FFFA;
+    padding: 4px 8px;
+    margin: 12px 12px 0 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.content .buttons button:hover {
+    background-color: #93B7BE;
+    cursor: pointer;
+}
+
+.custom-file-button {
+    background-color: #785964;
+    color: #F1FFFA;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 4px 8px;
+    margin: 12px 12px 0 0;
+    font-size: 14px;
+}
+
+.custom-file-button:hover {
+    background-color: #93B7BE;
+    /* Replace with your desired hover background color */
+}
+
+#json {
+    height: 70%;
+    resize: vertical;
+}
+
+footer {
+    color: #454545;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+footer p, a{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+footer a {
+    color: #785964;
+}
+
