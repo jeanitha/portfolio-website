@@ -109,17 +109,17 @@ footer {
 }
 
 .card-1 {
-    background-image: url("../assets/images/matrix-tumbnail.png");
+    background-image: url("../images/matrix-tumbnail.png");
     box-shadow: 0 0 80px -10px #454545;
 }
 
 .card-2 {
-    background-image: url("../assets/images/arduino-proj.jpg");
+    background-image: url("../images/arduino-proj.jpg");
     box-shadow: 0 0 80px -10px #93B7BE;
 }
 
 .card-3 {
-    background-image: url("../assets/images/2048-game.png");
+    background-image: url("../images/2048-game.png");
     box-shadow: 0 0 80px -10px #F1FFFA;
 }
 
