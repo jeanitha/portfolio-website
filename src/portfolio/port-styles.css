@@ -207,3 +207,36 @@ footer {
 
     margin-top: 25px;
 }
+
+/*-----------Technical Proficiencies-----------*/
+.skills-section {
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-section h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.skills-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-div li {
+    list-style: none;
+    text-align: center;
+    margin: 12px auto;
+}
+
+.tech-div li p {
+    margin: 12px auto;
+}
+
+.skills-logo ul img {
+    width: 72px;
+    height: 80px;
+    object-fit: contain;
+}
