@@ -9,6 +9,11 @@ Black #454545
 
 */
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 html,
 body {
     width: 100%;
@@ -29,18 +34,40 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin-top: 30vh;
-    margin-bottom: 30vh;
+    /* margin-top: 30vh; */
+    /* margin-bottom: 30vh; */
 }
 
 h1,
 h2 {
     margin: 0;
+    transform: translateY(-10vh);
 }
 
 h1 {
     font-size: 72px;
+    margin-bottom: 20px;
+
+    &:before {
+        content: '{';
+        color: #93B7BE;
+        margin-right: 50px;
+    }
+
+    &:after {
+        content: '}';
+        color: #93B7BE;
+        margin-left: 50px;
+    }
+
+    &::before, &::after {
+        -webkit-animation-name: opacity;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        animation-name: opacity;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
 }
 
 .typewriter h2 {
@@ -80,10 +107,35 @@ h1 {
     margin-bottom: 2rem;
     padding-left: 5%;
     padding-right: 5%;
-
     display: block;
     margin: auto;
+}
 
+.landing {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#down {
+    position: absolute;
+    top: 85vh;
+    padding: 20px;
+    font-size: 2.5em;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-weight: 600;
+}
+
+#down:hover{
+    cursor: pointer;
+    background-color: #785964;
+    color: #F1FFFA;
+    border-radius: 50%;
+    opacity: 0.8;
 }
 
 .resume-section {
@@ -214,9 +266,13 @@ footer {
     align-items: center;
 }
 
-.skills-section h3 {
+.skills-section h3{
     font-size: 32px;
     font-weight: 600;
+}
+
+.skills-section ul {
+    padding: 12px;
 }
 
 .skills-logo {
