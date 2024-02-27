@@ -72,6 +72,7 @@ body {
     background: #785964;
     color: #F1FFFA;
     box-shadow: 0 20px 100px 0 rgba(120, 89, 100, 0.5);
+    transition: all 0.3s ease;
 }
 
 .topnav ul li ul {
@@ -92,6 +93,7 @@ body {
     background: inherit;
     width: 100%;
     z-index: 1;
+    transition: all 0.3s ease;
 }
 
 .topnav .dropbtn a:hover {
@@ -333,6 +335,7 @@ h3 {
 .connect-img {
     display: flex;
     flex-direction: row;
+
 }
 
 .connect-img ul {
@@ -350,10 +353,12 @@ h3 {
     height: 32px;
     padding-left: 4px;
     margin: 0 0;
+    transition: all 0.3s ease;
 }
 
 .connect-img img:hover {
     opacity: 0.5;
+    transform: scale(1.2);
 }
 
 .connect-text {

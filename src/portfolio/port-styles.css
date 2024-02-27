@@ -9,7 +9,7 @@ Black #454545
 
 */
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -27,6 +27,8 @@ body {
     margin: 0;
     overflow-y: scroll;
 }
+
+/* ------------- Landing Page --------------*/
 
 header {
     color: #454545;
@@ -60,7 +62,8 @@ h1 {
         margin-left: 50px;
     }
 
-    &::before, &::after {
+    &::before,
+    &::after {
         -webkit-animation-name: opacity;
         -webkit-animation-duration: 2s;
         -webkit-animation-iteration-count: infinite;
@@ -123,20 +126,24 @@ h1 {
 #down {
     position: absolute;
     top: 85vh;
-    padding: 20px;
     font-size: 2.5em;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    font-weight: 600;
+    padding: 2px 15px;
+    /* font-weight: 600; */
+    color: #454545;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    border: 2px solid #785964;
 }
 
-#down:hover{
+#down:hover {
     cursor: pointer;
     background-color: #785964;
     color: #F1FFFA;
     border-radius: 50%;
-    opacity: 0.8;
+    transform: scale(1.1);
 }
+
+/*------------ Resume Section --------------*/
 
 .resume-section {
     display: flex;
@@ -147,6 +154,11 @@ h1 {
 footer {
     text-align: center;
     padding: 1rem;
+}
+
+.cards-bg .past-projects {
+    font-size: 32px;
+    font-weight: 600;
 }
 
 .project-item {
@@ -251,13 +263,20 @@ footer {
     height: 24px;
     width: 132px;
     border-radius: 4px;
-    background-color: #D5C7BC;
-    color: #785964;
-    padding: 5px;
+    background: linear-gradient(to right, #D5C7BC 50%, #785964 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #FFF;
+    padding: 5px 10px;
     text-decoration: none;
     font-weight: 600;
-
     margin-top: 25px;
+    transition: all 0.3s ease;
+}
+
+.action .card-link:hover {
+    color: #454545;
+    background-position: left;
 }
 
 /*-----------Technical Proficiencies-----------*/
@@ -266,7 +285,7 @@ footer {
     align-items: center;
 }
 
-.skills-section h3{
+.skills-section h3 {
     font-size: 32px;
     font-weight: 600;
 }
@@ -281,6 +300,14 @@ footer {
     justify-content: center;
 }
 
+.skills-logo ul {
+    transition: all .3s ease;
+}
+
+.skills-logo ul:hover {
+    transform: scale(1.1);
+}
+
 .tech-div li {
     list-style: none;
     text-align: center;
@@ -288,7 +315,13 @@ footer {
 }
 
 .tech-div li p {
-    margin: 12px auto;
+    margin: 12px auto 6px;
+}
+
+.tech-div-sections {
+    font-size: 20px;
+    font-weight: 600;
+
 }
 
 .skills-logo ul img {
