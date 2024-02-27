@@ -156,9 +156,11 @@ footer {
     padding: 1rem;
 }
 
-.cards-bg .past-projects {
+.section-header {
     font-size: 32px;
     font-weight: 600;
+    font-style: italic;
+    margin-bottom: 24px;
 }
 
 .project-item {
@@ -173,23 +175,35 @@ footer {
 }
 
 .card-1 {
-    background-image: url("../images/matrix-tumbnail.png");
-    box-shadow: 0 0 80px -10px #454545;
+    background-image: url("../images/tictactoe-game.png");
+    box-shadow: 0 0 80px -10px #F1FFFA;
 }
 
 .card-2 {
+    background-image: url("../images/csv2json.png");
+    box-shadow: 0 0 80px -10px #F1FFFA;
+}
+
+.card-3 {
     background-image: url("../images/arduino-proj.jpg");
     box-shadow: 0 0 80px -10px #93B7BE;
 }
 
-.card-3 {
+.card-4 {
     background-image: url("../images/2048-game.png");
     box-shadow: 0 0 80px -10px #F1FFFA;
 }
 
+.card-5 {
+    background-image: url("../images/matrix-tumbnail.png");
+    box-shadow: 0 0 80px -10px #454545;
+}
+
 .card-1,
 .card-2,
-.card-3 {
+.card-3,
+.card-4,
+.card-5 {
     border-radius: 8px;
     background-size: cover;
     background-position: center;
@@ -202,13 +216,15 @@ footer {
 }
 
 .card-1,
-.card-3 {
+.card-3,
+.card-5 {
     opacity: 0;
     transform: translateY(100px) translateX(-100px);
     transition: opacity 0.5s, transform 0.8s;
 }
 
-.card-2 {
+.card-2,
+.card-4 {
     opacity: 0;
     transform: translateY(100px) translateX(100px);
     transition: opacity 0.5s, transform 0.8s;
@@ -216,21 +232,21 @@ footer {
 
 .card-1.fade-in,
 .card-2.fade-in,
-.card-3.fade-in {
+.card-3.fade-in, 
+.card-4.fade-in,
+.card-5.fade-in {
     opacity: 1;
     transform: translateY(0) translateX(0);
 }
 
 .card-1 .info,
 .card-2 .info,
-.card-3 .info {
+.card-3 .info, 
+.card-4 .info,
+.card-5 .info {
     color: #454545;
     bottom: 1px;
     margin: 24px;
-}
-
-.card:hover .card-blur {
-    opacity: 0.6;
 }
 
 .card-fill {
@@ -283,11 +299,6 @@ footer {
 .skills-section {
     justify-content: center;
     align-items: center;
-}
-
-.skills-section h3 {
-    font-size: 32px;
-    font-weight: 600;
 }
 
 .skills-section ul {
