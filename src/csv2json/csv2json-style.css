@@ -36,7 +36,7 @@ p {
     font-weight: 600;
 }
 
-.csv-json-content {
+.content {
     display: flex;
     justify-content: space-evenly;
 }

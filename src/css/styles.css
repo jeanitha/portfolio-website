@@ -306,24 +306,41 @@ h3 {
     margin-top: 8px;
 }
 
+.title h3 a {
+    display: inline-block;
+    color: #785964;
+    transition: all .3s ease;
+    text-decoration: none;
+    animation: shadow 5s infinite;
+}
+
+@keyframes shadow {
+    0%, 100% {
+        text-shadow: 3px 3px 0 #F1FFFA;
+    }
+    50% {
+        text-shadow: 0 0 0 #F1FFFA;
+    }
+}
+
+.title h3 a:hover {
+    color: #454545;
+}
+
 .main-text {
+    display: flex;
+    flex-direction: column;
     padding: 8px 20px 20px 0;
     font-weight: 600;
     text-align: justify;
 }
 
-/* .main-text .viewporto {
-    font-size: 22px;
-    padding-top: 24px;
-} */
-
 .content-bg {
     max-width: 550px;
 }
 
-.content {
-    height: 100vh;
-    margin-top: -4%;
+.home-content {
+    /* margin-top: -4%; */
     display: flex;
     align-items: center;
 }
