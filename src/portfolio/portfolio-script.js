@@ -40,3 +40,15 @@ $(document).ready(function () {
     }, 500);
   });
 });
+
+$(document).ready(function () {
+  var animated = false;
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 30 && !animated) {
+      $('html, body').animate({
+        scrollTop: $('#start').offset().top
+      }, 500);
+      animated = true;
+    }
+  });
+});

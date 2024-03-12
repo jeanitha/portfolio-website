@@ -176,27 +176,27 @@ footer {
 
 .card-1 {
     background-image: url("../images/tictactoe-game.png");
-    box-shadow: 0 0 80px -10px #FBF5F3;
+    box-shadow: 6px 6px 0 #7B0828;
 }
 
 .card-2 {
     background-image: url("../images/csv2json.png");
-    box-shadow: 0 0 80px -10px #FBF5F3;
+    box-shadow: 6px 6px 0 #7B0828;
 }
 
 .card-3 {
     background-image: url("../images/arduino-proj.jpg");
-    box-shadow: 0 0 80px -10px #8DAA9D;
+    box-shadow: 6px 6px 0 #7B0828;
 }
 
 .card-4 {
     background-image: url("../images/2048-game.png");
-    box-shadow: 0 0 80px -10px #FBF5F3;
+    box-shadow: 6px 6px 0 #7B0828;
 }
 
 .card-5 {
     background-image: url("../images/matrix-tumbnail.png");
-    box-shadow: 0 0 80px -10px #0F0E0E;
+    box-shadow: 6px 6px 0 #7B0828;
 }
 
 .card-1,
@@ -261,7 +261,7 @@ footer {
 }
 
 .fill-bg {
-    background: #FBF5F3;
+    background: #FBF5F5;
     border-radius: 8px;
     bottom: 0;
     width: 100%;
@@ -299,6 +299,15 @@ footer {
 .skills-section {
     justify-content: center;
     align-items: center;
+    background-color: #7B0828;
+    /* padding: 24px 24px; */
+    margin-bottom: 24px;
+}
+
+.skills-section h3{
+    color: #FBF5F3;
+    text-align: center;
+    margin-top: 12px;
 }
 
 .skills-section ul {
@@ -319,6 +328,14 @@ footer {
     transform: scale(1.1);
 }
 
+.tech-div {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
 .tech-div li {
     list-style: none;
     text-align: center;
@@ -327,12 +344,14 @@ footer {
 
 .tech-div li p {
     margin: 12px auto 6px;
+    color: #FBF5F3;
 }
 
 .tech-div-sections {
-    font-size: 20px;
+    margin: 24px 24px;
+    font-size: 32px;
     font-weight: 600;
-
+    color: #FBF5F3;
 }
 
 .skills-logo ul img {
