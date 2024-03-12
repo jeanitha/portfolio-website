@@ -163,6 +163,15 @@ footer {
     margin-bottom: 24px;
 }
 
+.resume-section h2{
+    color: #7B0828;
+    transform: translateY(0);
+    text-align: center;
+    margin-top: 24px;
+}
+
+
+
 .project-item {
     margin-bottom: 2rem;
     padding: 2rem;
@@ -303,13 +312,6 @@ footer {
     /* padding: 24px 24px; */
     margin-bottom: 24px;
 }
-
-.skills-section h3{
-    color: #FBF5F3;
-    text-align: center;
-    margin-top: 12px;
-}
-
 .skills-section ul {
     padding: 12px;
 }
