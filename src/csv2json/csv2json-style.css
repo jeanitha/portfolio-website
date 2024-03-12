@@ -2,16 +2,16 @@
 /*
 COLOR PALETTE
 
-Blue #93B7BE
-White #F1FFFA
-Beige #D5C7BC
-Mauve #785964
-Black #454545
+Blue #8DAA9D
+White #FBF5F3
+Purple #522B47
+Mauve #7B0828
+Black #0F0E0E
 
 */
 
 * {
-    background: #F1FFFA;
+    background: #FBF5F3;
 }
 
 .topnav ul li a {
@@ -25,8 +25,8 @@ Black #454545
 h1 {
     text-align: center;
     margin: 12px 20%;
-    color: #F1FFFA;
-    background-color: #93B7BE;
+    color: #FBF5F3;
+    background-color: #8DAA9D;
 }
 
 p {
@@ -42,9 +42,9 @@ p {
 }
 
 .content .buttons button {
-    background-color: #785964;
+    background-color: #7B0828;
     border: none;
-    color: #F1FFFA;
+    color: #FBF5F3;
     padding: 4px 8px;
     margin: 12px 12px 0 0;
     font-weight: 600;
@@ -52,13 +52,13 @@ p {
 }
 
 .content .buttons button:hover {
-    background-color: #93B7BE;
+    background-color: #8DAA9D;
     cursor: pointer;
 }
 
 .custom-file-button {
-    background-color: #785964;
-    color: #F1FFFA;
+    background-color: #7B0828;
+    color: #FBF5F3;
     cursor: pointer;
     font-weight: 600;
     padding: 4px 8px;
@@ -77,7 +77,7 @@ p {
 }
 
 footer {
-    color: #454545;
+    color: #0F0E0E;
     text-align: center;
     position: relative;
     bottom: 20px;
@@ -91,6 +91,6 @@ footer p, a{
 }
 
 footer a {
-    color: #785964;
+    color: #7B0828;
 }
 

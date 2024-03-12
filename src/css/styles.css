@@ -1,22 +1,18 @@
 /*
 COLOR PALETTE
 
-Blue #93B7BE
-White #F1FFFA
-Beige #D5C7BC
-Mauve #785964
-Black #454545
+Blue #8DAA9D
+White #FBF5F3
+Purple #522B47
+Mauve #7B0828
+Black #0F0E0E
 
 */
 
-/* GLOBAL STYLES ---------------------- */
+/* GLOBAL STYLES -----------------------*/
 html {
     box-sizing: border-box;
 }
-
-/* *, *:before, *:after {
-    box-sizing: inherit;
-} */
 
 html,
 body {
@@ -43,7 +39,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #454545;
+    color: #0F0E0E;
     padding: 14px 12px;
     text-decoration: none;
     font-size: 14px;
@@ -63,15 +59,15 @@ body {
     text-overflow: ellipsis;
     text-align: right;
     max-width: 100%;
-    color: #454545;
+    color: #0F0E0E;
     text-decoration: none;
     padding: 12px 12px;
     border-radius: 8px;
 }
 
 .topnav ul li a:hover {
-    background: #785964;
-    color: #F1FFFA;
+    background: #522B47;
+    color: #FBF5F3;
     box-shadow: 0 20px 100px 0 rgba(120, 89, 100, 0.5);
     transition: all 0.3s ease;
 }
@@ -99,23 +95,23 @@ body {
 
 .topnav .dropbtn a:hover {
     background: inherit;
-    color: #454545;
+    color: #0F0E0E;
 }
 
 .topnav .dropbtn ul li:hover a {
-    background: #785964;
-    color: #F1FFFA;
+    background: #522B47;
+    color: #FBF5F3;
     box-shadow: 0 20px 100px 0 rgba(120, 89, 100, 0.5);
 }
 
 .topnav .active {
-    background-color: #785964;
-    color: #F1FFFA;
+    background-color: #522B47;
+    color: #FBF5F3;
 }
 
-/* HOMEPAGE --------------------------- */
+/* LANDING PAGE -------------------- */
 .home {
-    background: #D5C7BC;
+    background: #FBF5F3;
     display: flex;
     flex-direction: column;
 }
@@ -131,12 +127,13 @@ body {
     margin: auto 8rem;
     display: flex;
     flex-direction: column;
+    max-width: 100vw;
 }
 
 .home .title {
-    font-size: 32px;
+    font-size: 42px;
     font-family: 'Montserrat', sans-serif;
-    color: #F1FFFA;
+    color: #0F0E0E;
 }
 
 .animated {
@@ -149,11 +146,11 @@ body {
 .hello {
     display: flex;
     overflow: hidden;
-    height: 74px;
+    height: 120px; /*kalo mau ganti font size ganti ini jg*/
     padding: 0 40px;
-    font-size: 52px;
+    font-size: 84px;
     font-weight: 600;
-    color: #454545;
+    color: #0F0E0E;
 
     &:before {
         content: '[';
@@ -167,7 +164,7 @@ body {
 
     &:before,
     &:after {
-        color: #93B7BE;
+        color: #8DAA9D;
 
         -webkit-animation-name: opacity;
         -webkit-animation-duration: 2s;
@@ -303,76 +300,63 @@ body {
 h2,
 h3 {
     margin-bottom: 8px;
-    margin-top: 8px;
+}
+
+.title h3{
+    font-size: 32px;
 }
 
 .title h3 a {
     display: inline-block;
-    color: #785964;
+    color: #0F0E0E;
     transition: all .3s ease;
     text-decoration: none;
-    animation: shadow 5s infinite;
+    animation: colorchange 5s infinite;
 }
 
-@keyframes shadow {
+@keyframes colorchange {
     0%, 100% {
-        text-shadow: 3px 3px 0 #F1FFFA;
+        color: #8DAA9D;
+    }
+    25%, 75% {
+        color:#7B0828;
     }
     50% {
-        text-shadow: 0 0 0 #F1FFFA;
+        color: #0F0E0E;
     }
 }
 
 .title h3 a:hover {
-    color: #454545;
+    transform: scale(1.05);
 }
 
 .main-text {
-    display: flex;
-    flex-direction: column;
     padding: 8px 20px 20px 0;
     font-weight: 600;
     text-align: justify;
 }
 
-.content-bg {
-    max-width: 550px;
-}
-
 .home-content {
-    /* margin-top: -4%; */
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+ 
+.landing {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .headshot {
     display: flex;
-    margin-right: -5%;
     align-items: center;
-    margin-left: 32px;
-}
-
-.headshot-text {
-    color: #008000;
-    z-index: 1;
-    transform: translateX(20px);
-    font-style: italic;
-
-    &:before {
-        content: '/*';
-    }
-
-    &:after {
-        content: '*/';
-    }
-}
-
-.headshot-text .firstline {
-    padding: 8px 0;
-}
-
-.headshot-text .secondline {
-    padding-bottom: 8px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -10%;
 }
 
 /* LETS CONNECT ---------------------- */
@@ -416,8 +400,8 @@ h3 {
 .connect-text {
     /* margin-top: 5%; */
     font-size: 24px;
-    color: #F1FFFA;
-    border-top: 2px solid #785964;
+    color: #0F0E0E;
+    border-top: 2px solid #7B0828;
 }
 
 
@@ -427,7 +411,7 @@ footer {
     justify-content: center; */
     margin-top: auto;
     margin-bottom: 8px;
-    color: #454545;
+    color: #0F0E0E;
     width: cover;
     font-size: 12px;
     font-weight: 600;
@@ -436,5 +420,5 @@ footer {
 }
 
 footer a {
-    color: #785964;
+    color: #522B47;
 }
