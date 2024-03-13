@@ -405,7 +405,7 @@ h6 {
     margin-left: -3px;
 }
 
-.event {
+.event-1, .event-2, .event-3, .event-4, .event-5 {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
@@ -425,12 +425,27 @@ h6 {
     z-index: 1;
 } */
 
-.event:nth-child(odd) {
+.event-1, .event-3, .event-5 {
     left: 0;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.3s ease;
 }
 
-.event:nth-child(even) {
+.event-2, .event-4 {
     left: 50%;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.5s ease;
+}
+
+.event-1.fade-in, .event-3.fade-in, .event-5.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.event-2.fade-in, .event-4.fade-in {
+    opacity: 1;
     transform: translateX(-18%);
 }
 
