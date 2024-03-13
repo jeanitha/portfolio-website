@@ -31,8 +31,10 @@ body {
 /* NAVIGATION BAR -------------------- */
 .topnav {
     background: inherit;
-    position: sticky;
     position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .topnav ul {
@@ -114,6 +116,8 @@ body {
     background: #FBF5F3;
     display: flex;
     flex-direction: column;
+    height: fit-content;
+    overflow: visible;
 }
 
 .home .content-wrapper {
@@ -302,34 +306,6 @@ h3 {
     margin-bottom: 8px;
 }
 
-.title h3{
-    font-size: 32px;
-}
-
-.title h3 a {
-    display: inline-block;
-    color: #0F0E0E;
-    transition: all .3s ease;
-    text-decoration: none;
-    animation: colorchange 5s infinite;
-}
-
-@keyframes colorchange {
-    0%, 100% {
-        color: #8DAA9D;
-    }
-    25%, 75% {
-        color:#7B0828;
-    }
-    50% {
-        color: #0F0E0E;
-    }
-}
-
-.title h3 a:hover {
-    transform: scale(1.05);
-}
-
 .main-text {
     padding: 8px 20px 20px 0;
     font-weight: 600;
@@ -457,6 +433,45 @@ h6 {
     margin: 3%;
 }
 
+/* CHECK OUT --------------------- */
+
+.check {
+    width: 100%;
+}
+
+.check h4{
+    font-size: 18px;
+}
+
+.check h3{
+    margin-bottom: 32px;
+    font-size: 32px;
+    text-align: left;
+}
+
+.check h3 a {
+    display: inline-block;
+    color: #0F0E0E;
+    transition: all .3s ease;
+    text-decoration: none;
+    animation: colorchange 5s infinite;
+}
+
+@keyframes colorchange {
+    0%, 100% {
+        color: #8DAA9D;
+    }
+    25%, 75% {
+        color:#7B0828;
+    }
+    50% {
+        color: #0F0E0E;
+    }
+}
+
+.check h3 a:hover {
+    transform: scale(1.05);
+}
 
 /* LETS CONNECT ---------------------- */
 .connect-container {
@@ -498,8 +513,9 @@ h6 {
 
 .connect-text {
     /* margin-top: 5%; */
-    font-size: 32px;
+    font-size: 28px;
     color: #0F0E0E;
+    padding-top: 24px;
     border-top: 2px solid #7B0828;
 }
 
